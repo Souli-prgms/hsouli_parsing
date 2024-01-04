@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "parsing-assignment"
+version = "0.1.0"
+description = "Python log parsing assignment."
+authors = [
+    "Hugo Soulignac <soulignach@gmail.com>"
+]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "default"
+url = "https://pypi.org/simple"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+orjson = "^3.9.10"
+fire = "^0.5.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.6.1"
+pylint = "^3.0.2"
+black = "^23.10.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
