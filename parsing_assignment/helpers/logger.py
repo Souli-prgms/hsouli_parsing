@@ -9,6 +9,7 @@ class _TestLogger(logging.Logger):
     """Test logger class.
 
     Could be a singleton if we only wanted one unique instance.
+    Could also be modified to create a log file at each run.
     """
 
     _fmt: ClassVar[str] = "%(message)s"
