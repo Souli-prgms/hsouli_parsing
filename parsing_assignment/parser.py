@@ -26,7 +26,7 @@ def parse_log_file(filepath: str) -> None:
     )
 
     for line_index, line_content in open_file(filepath):
-        # for better performances, we could decouple the chain processing and the logging
+        # for better performances, we could have decoupled the chain processing and the logging
         # in order to process lines in parallel (for big log files)
         # we could also have used cython for optimization
 
